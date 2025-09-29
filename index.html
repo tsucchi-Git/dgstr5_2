@@ -234,11 +234,11 @@
         document.getElementById("close-button").style.display="block";
         document.getElementById("start_button").style.display="none"; 
         //スクロール禁止にする
-        document.documentElement.style.overflow = "hidden";
+        //document.documentElement.style.overflow = "hidden";
         //「×」ボタンがクリックされたらダイアログを閉じる
         var cbutton=document.getElementById("close-button");
           cbutton.addEventListener('click', function () {
-            document.documentElement.style.overflow = "visible";
+            //document.documentElement.style.overflow = "visible";
             document.getElementById("warning").remove();
             cbutton.remove();
             document.getElementById("start_button").style.display="block"; 
@@ -247,3 +247,4 @@
 </script>
 
 </html>
+
