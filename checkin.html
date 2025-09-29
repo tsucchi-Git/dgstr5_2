@@ -46,8 +46,18 @@
       margin-bottom:20px;
       text-align: center; /* 横方向の中央揃え */
       font-family:Arial;
+      animation: anime2 0.5s ease 0s infinite alternate;
+      transform-origin:center;
     }
-    /* .rally_start img { 
+    @keyframes anime2 {
+    from {
+      transform: scale(0.9,0.9);
+    }
+    to {
+      transform: scale(1,1);
+    }
+    }     
+  /* .rally_start img { 
       animation: anime2 0.5s ease 0s infinite alternate;
       transform-origin:center;
       margin:auto;
@@ -458,4 +468,5 @@
  </script>
 </body>
 </html>
+
 
