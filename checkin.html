@@ -389,7 +389,7 @@
                 dist.style.fontSize="10pt";           //フォントサイズを指定
                 dist.style.color="black";              //フォントの色を指定
                 //文字ボタンにアニメーションを再開
-                dist.style.animationPlayState = "runnning";  
+                dist.style.animationPlayState = "running";  
                 //文字ボタンをタップ可能にし、タップ後の処理を記述
                 dist.addEventListener('click',Stamp);
                 }
@@ -401,6 +401,8 @@
                     dist.style.color="black";              //フォントの色を指定
                     //文字ボタンのオンクリック機能の削除
                     dist.removeEventListener('click', Stamp)
+                    //文字ボタンにアニメーションを停止
+                    dist.style.animationPlayState = "paused";  
                     //現在地の連続監視機能を停止
                     navigator.geolocation.clearWatch(watch_id); 
                     //スポットのマーカーをグリーンからオレンジのものに差し替える
@@ -456,6 +458,7 @@
  </script>
 </body>
 </html>
+
 
 
 
