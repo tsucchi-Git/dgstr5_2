@@ -348,6 +348,7 @@
               dist.style.textAlign = "center";  //センタリング
               dist.style.fontSize="9pt";       //フォントサイズを指定
               dist.textContent= "少しお待ちください。スポットまでの距離を計算中です。";
+              dist.style.animationPlayState = "paused";
               dist.style.backgroundColor="lightgray"; //背景色を指定
               //現在位置の連続監視
               watch_id = navigator.geolocation.watchPosition(successCallback);//,errorCallback,position_options);  
@@ -468,5 +469,6 @@
  </script>
 </body>
 </html>
+
 
 
