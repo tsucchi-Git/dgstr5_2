@@ -385,11 +385,11 @@
             if(Math.round(r)>checkin_distance)  //チェックインの範囲を指定
               { 
                 //対象地点のチェックイン可能範囲の外側にいる場合の処理
-                dist.textContent='ここからの距離：'+  Math.round(r) +'m';
+                dist.textContent='ここからの距離：'+  Math.round(r) +'m です。←チェックインはできません。';
                 dist.style.backgroundColor="white";    //背景色を指定
                 dist.style.border="solid 2px blue"; //境界線の太さと色を指定
                 dist.style.textAlign = "center";  //センタリング
-                dist.style.fontSize="12pt";       //フォントサイズを指定
+                dist.style.fontSize="10pt";       //フォントサイズを指定
                 dist.style.color="red";            //フォントの色を指定
               } else 
               {
@@ -469,6 +469,7 @@
  </script>
 </body>
 </html>
+
 
 
 
